@@ -1,0 +1,103 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.background {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+input {
+  background-color: white;
+  color: #000;
+}
+
+select {
+  background-color: #d5d5d5;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus,
+select:focus {
+  border-color: #4c8bf5;
+  outline: none;
+  box-shadow: 0 0 4px rgba(76, 139, 245, 0.5);
+}
+
+button {
+  background-color: #4c8bf5;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #367be5;
+}
+
+button:active {
+  background-color: #255ba3;
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 14px;
+  }
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #4a5568; /* Dark grey text */
+}
+
+.footer a {
+  color: #3182ce; /* Blue links */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

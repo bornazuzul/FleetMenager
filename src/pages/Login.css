@@ -1,0 +1,102 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f7fafc; /* Light background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Login container styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f7fafc; /* Soft background */
+}
+
+.login-form {
+  background: #ffffff; /* White background for the form */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* Softer shadow */
+  width: 400px;
+}
+
+.login-form h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2d3748; /* Darker text for the title */
+}
+
+/* Input field styles */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #e2e8f0; /* Light grey border */
+  border-radius: 6px;
+  font-size: 16px;
+  color: #2d3748; /* Dark text for better readability */
+  background-color: #f7fafc; /* Soft background color for inputs */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #3182ce; /* Light blue border on focus */
+  box-shadow: 0 0 5px rgba(49, 130, 206, 0.5); /* Blue glow */
+  outline: none;
+}
+
+/* Button styles */
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  background-color: #495662; /* Blue background */
+  border: none;
+  border-radius: 6px;
+  color: #ffffff; /* White text */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-login:hover {
+  background-color: #2b6cb0; /* Darker blue on hover */
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #4a5568; /* Dark grey text */
+}
+
+.footer a {
+  color: #3182ce; /* Blue links */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

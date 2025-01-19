@@ -1,0 +1,206 @@
+.container h2 {
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0rem auto;
+  margin-top: 2rem;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.reservations {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.reservation-card {
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  /* border-left: 5px solid #007bff; */
+  border-left: 5px solid #e4c320;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  max-width: 50%;
+  display: block;
+}
+
+.reservation-card p {
+  margin: 8px 0;
+}
+
+.no-reservations {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #000;
+}
+
+/* General styling for the label and input */
+.date-label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Arial", sans-serif; /* Modern font */
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.date-label span {
+  margin-bottom: 8px; /* Adds some space between the label and input */
+}
+
+/* Input styling */
+.input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.1s ease; /* Smooth transition for interactions */
+}
+
+/* Focus state for the input */
+.input:focus {
+  border-color: #4f8ef7; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(79, 142, 247, 0.5); /* Soft blue glow */
+}
+
+/* Styling for hover on input */
+.input:hover {
+  border-color: #b0c8e3;
+}
+
+/* Add a modern background color */
+.input::-webkit-calendar-picker-indicator {
+  background-color: #565656; /* Calendar picker indicator color */
+  border-radius: 4px;
+}
+
+/* Remove input spinner on mobile if needed */
+input[type="date"]::-webkit-outer-spin-button,
+input[type="date"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 600px) {
+  .input {
+    width: 100%;
+  }
+}
+
+.select {
+  cursor: pointer;
+  background-color: #eaeaea;
+}
+
+.textarea {
+  height: 100px;
+  resize: vertical;
+  color: #000;
+}
+
+.button {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+
+.reservation-card.approved {
+  border-left: 5px solid rgb(80, 153, 31);
+}
+
+.reservation-card.pending {
+  border-left: 5px solid rgb(243, 216, 9);
+}
+
+.reservation-card.not-approved {
+  border-left: 5px solid #ce3d27;
+}
+
+@media (min-width: 768px) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .form label,
+  .form input,
+  .form select,
+  .form textarea {
+    flex: 1 1 45%;
+  }
+
+  .form button {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 20px;
+  }
+
+  .reservation-card {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+}
