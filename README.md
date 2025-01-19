@@ -62,6 +62,11 @@ Ensure you have the following installed:
    npm install
    npm run start
    ```
+   
+5. **Run all with one command!!**:
+   ```bash
+   npm start
+   ```
 
 ---
 
